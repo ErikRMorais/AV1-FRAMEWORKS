@@ -51,90 +51,136 @@ function removerProduto(index: number) {
 </template>
 
 <style scoped>
-  #app { 
-    font-family: sans-serif; 
-    padding: 20px; 
-    max-width: 500px; 
-    margin: 0 auto;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
-  h1, h2, h3 {
-    color: #333;
-  }
+#app {
+  font-family: 'Inter', sans-serif;
+  max-width: 480px;
+  margin: 60px auto;
+  padding: 0 20px;
+  color: #1e293b;
+}
 
-  .input-section {
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    flex-wrap: wrap;
-  }
+h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #1e293b;
+}
 
-  .input-section h3 {
-    width: 100%;
-    margin-bottom: 10px;
-  }
+h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 12px;
+}
 
-  button { 
-    cursor: pointer; 
-    padding: 8px 12px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    background-color: #f0f0f0;
-    transition: background-color 0.2s;
-  }
-  
-  button:hover {
-    background-color: #e0e0e0;
-  }
+h3 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #94a3b8;
+  margin-bottom: 8px;
+  width: 100%;
+}
 
-  .btn-remove { 
-    padding: 4px 8px; 
-    font-size: 0.9em; 
-    background-color: #ffdddd;
-    border-color: #ffcccc;
-  }
-  
-  .btn-remove:hover {
-    background-color: #ffcccc;
-  }
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
 
-  input { 
-    flex-grow: 1;
-    padding: 8px; 
-    border-radius: 4px; 
-    border: 1px solid #ccc; 
-  }
+input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #1e293b;
+  outline: none;
+  transition: border-color 0.2s;
+}
 
-  hr {
-    border: 0;
-    height: 1px;
-    background-color: #ddd;
-    margin: 20px 0;
-  }
+input:focus {
+  border-color: #6366f1;
+}
 
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
+input::placeholder {
+  color: #94a3b8;
+}
 
-  li {
-    background: #f9f9f9;
-    margin: 8px 0;
-    padding: 10px 15px;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #eee;
-  }
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #6366f1;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
 
-  .empty-message {
-    color: #888;
-    text-align: center;
-    padding: 30px;
-    background-color: #fdfdfd;
-    border: 1px dashed #ccc;
-    border-radius: 8px;
-  }
+button:hover {
+  background: #4f46e5;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 24px 0;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0 0 12px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+.btn-remove {
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  background: #fff0f0;
+  color: #ef4444;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-remove:hover {
+  background: #fecaca;
+}
+
+.empty-message {
+  text-align: center;
+  color: #94a3b8;
+  padding: 32px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
 </style>
