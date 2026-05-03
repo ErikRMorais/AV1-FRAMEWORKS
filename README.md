@@ -1,6 +1,6 @@
 # Sistema de Gestão de Compras
 
-**Erik R. Morais**
+**Erik R. S. Morais**
 
 ---
 
