@@ -24,6 +24,10 @@ Aplicação desenvolvida com Vue.js 3 para gerenciar uma lista de compras em tem
 ```bash
 # 1. Entrar na pasta do projeto
 cd AV01
+ou
+cd .\AV1-FRAMEWORKS-main\AV01
+
+(Abra o seu terminal e entre no diretorio com o "cd" da forma que sua IDE entender ou se preferir clique com o botão direito do mouse na pasta e selecione "Abrir com o terminal")
 
 # 2. Instalar as dependências
 npm install
